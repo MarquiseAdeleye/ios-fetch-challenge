@@ -69,8 +69,7 @@ struct IngredientsView: View {
                         }
                         
                     }
-                    //idMeal.strIngredient10 == "" || nil ? print("Nope") : ingredients += idMeal.strIngredient1
-                    //print("ingridents" + ingredients)
+                
                     
                     .padding(3)
                 }

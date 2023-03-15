@@ -105,9 +105,7 @@ class IngredientModel: ObservableObject{
     @Published public var dessertData: [Ingredients] = []
     
     func fetchDessert(){
-        // ERROR HERE
-        //let mealID = presentedView.mealID
-        //  print("mealID" + mealID)
+       
         let mealID = Global.mealID
         //Assigning the API to the URL variable
         guard let url = URL(string: "https://themealdb.com/api/json/v1/1/lookup.php?i=\(mealID)") else {
