@@ -78,7 +78,7 @@ struct Ingredients: Hashable, Codable {
         //I am creating a loop that will allow me to check if the property in the String? array is null or empty
         for ingredient in allIngredients{
             //I need to unwrap each property through the if let statement so that I can know if it is null or holds a string
-            if let ingredient = ingredient, ingredient != "" {
+            if let ingredient = ingredient, ingredient != "", ingredient != " " {
                 temp.append(ingredient)
             }
         }
@@ -92,7 +92,7 @@ struct Ingredients: Hashable, Codable {
         //I am creating a loop that will allow me to check if the property in the String? array is null or empty
         for measurement in allMeasurements{
             //I need to unwrap each property through the if let statement so that I can know if it is null or holds a string
-            if let measurement = measurement, measurement != "" {
+            if let measurement = measurement, measurement != "", measurement != " " {
                 temp.append(measurement)
             }
         }
